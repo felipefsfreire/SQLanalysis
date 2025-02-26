@@ -1,0 +1,12 @@
+-- Desafio: "Quais clientes gastaram mais do que a média geral de todos os clientes?"
+-- Requisitos:
+-- Calcule o gasto total de cada cliente em 2024 (SUM(total_price)).
+-- Calcule a média geral de gasto de todos os clientes.
+-- Retorne apenas os clientes cujo gasto total foi maior do que essa média.
+-- A consulta deve retornar:
+-- customer_id (ID do cliente)
+-- customer (nome do cliente)
+-- total_spent (gasto total do cliente)
+-- avg_spent (média geral de gasto de todos os clientes, para referência)
+-- Ordene os resultados do maior para o menor total_spent.
+---------------------------------------------------------------------------------------------------
