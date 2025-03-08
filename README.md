@@ -22,11 +22,14 @@ Novas consultas serão adicionadas conforme o repositório evoluir!
 ## Como Utilizar as Consultas?
 
 1. Clone o repositório:
+
    ```bash
    git clone https://github.com/seu-usuario/analises-sql.git
    ```
-2. Acesse seu banco de dados (MySQL, PostgreSQL, SQLite, etc.).
-3. Execute os scripts SQL desejados para realizar as análises.
+
+1. Acesse seu banco de dados (MySQL, PostgreSQL, SQLite, etc.).
+
+1. Execute os scripts SQL desejados para realizar as análises.
 
 ## Contribuições
 
