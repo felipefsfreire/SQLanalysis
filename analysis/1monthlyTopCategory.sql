@@ -36,5 +36,5 @@ SELECT
     total_revenue
 FROM MonthlyRevenue
 WHERE rank = 1  -- Mantém apenas a categoria com maior receita para cada mês
-ORDER BY month;  -- Ordena os resultados por mês
+ORDER BY month
 

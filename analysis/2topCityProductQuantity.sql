@@ -7,17 +7,19 @@
 -- total_quantity (quantidade total vendida do produto na cidade)
 -- Se houver empate na quantidade vendida, desempate pelo produto em ordem alfabética.
 ---------------------------------------------------------------------------------------
+
+-- Esta (CTE)calcula a quantidade total de vendas por cidade e produto criando uma tabela temporária
 WITH topCityProductQuantity AS (
-SELECT
-    city,
-    product,
-    SUM(sales_quantity) total_quantity,
-    ROW_NUMBER() OVER(PARTITION BY city ORDER BY SUM(sales_quantity) DESC) AS rank
-FROM
-    sales
-GROUP BY
-    city,
-    product
+    SELECT
+        city,
+        product,
+        SUM(sales_quantity) AS total_quantity, -- Calcula a soma da quantidade de vendas para cada combinação de cidade e produto, e a nomeia como 'total_quantity'.
+        ROW_NUMBER() OVER(PARTITION BY city ORDER BY SUM(sales_quantity) DESC) AS rank -- Atribui um número de classificação para cada produto dentro de cada cidade, ordenando pela quantidade total de vendas em ordem decrescente.
+    FROM
+        sales
+    GROUP BY
+        city,
+        product
 )
 
 SELECT
@@ -25,9 +27,9 @@ SELECT
     product,
     total_quantity
 FROM
-    topCityProductQuantity
+    topCityProductQuantity -- Seleciona os dados da CTE.
 WHERE
-    rank BETWEEN 1 AND 3
+    rank BETWEEN 1 AND 3 -- Filtra os resultados para incluir apenas os produtos com rank 1, 2 ou 3 (os três produtos mais vendidos) em cada cidade.
 ORDER BY
     city,
     rank
