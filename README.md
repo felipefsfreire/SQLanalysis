@@ -1,17 +1,21 @@
 # Análises de Dados com SQL
 
-Bem-vindo(a) ao repositório **Análises de Dados com SQL**! Aqui você encontrará consultas SQL para explorar, manipular e analisar dados de diferentes domínios.
+Bem-vindo(a) ao repositório *Análises de Dados com SQL*! Aqui você encontrará consultas SQL para explorar, manipular e analisar dados de diferentes domínios.
 
 ## Sobre as Análises
 
-Este repositório contém diversos exemplos práticos de análise de dados utilizando SQL. As consultas são organizadas em diferentes categorias e abordam desde consultas básicas até análises mais complexas.
+Este repositório contém diversos exemplos práticos de análise de dados utilizando SQL.
 
 ## Análises Disponíveis
 
-- **Análise de Vendas em um E-commerce**
-- **Segmentação de Clientes Baseada em Compras**
-- **Avaliação do Impacto de Promoções**
-- **Previsão de Tendências de Consumo**
+- [*Desempenho Mensal de Categorias em 2024*](/analysis/1monthlyTopCategory.sql)
+  - Banco de dados: [salesEcommerce.db](/dataBase/salesEcommerce.db)
+- [*Ranking de Produtos Mais Vendidos por Cidade*](/analysis/2topCityProductQuantity.sql)
+  - Banco de dados: [salesEcommerce.db](/dataBase/salesEcommerce.db)
+- [*Análise de Primeiras Compras de Clientes em 2024*](/analysis/3customerFirstSaleYear.sql)
+  - Banco de dados: [salesEcommerce.db](/dataBase/salesEcommerce.db)
+- [*Análise de Gastos de Clientes Acima da Média*](/analysis/4customerAboveAvarege.sql)
+  - Banco de dados: [salesEcommerce.db](/dataBase/salesEcommerce.db)
 
 Novas consultas serão adicionadas conforme o repositório evoluir!
 
